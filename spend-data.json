@@ -1,0 +1,177 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-16T15:37:02.745Z",
+  "cards": [
+    {
+      "id": "regalia",
+      "name": "HDFC Regalia Gold",
+      "role": "Primary",
+      "fee": 2950,
+      "limit": null,
+      "annualFee": 2500,
+      "gst": 18,
+      "notes": "Milestones: ₹4L fee waiver; ₹5L ₹5,000 SmartBuy flight voucher; ₹7.5L additional ₹5,000 SmartBuy flight voucher. Target ₹1.5L each quarter for ₹1,500 retail voucher. Lounge: ₹60,000 spend in current calendar quarter.",
+      "rules": {
+        "milestoneExcluded": [
+          "Government & taxes",
+          "Fuel",
+          "Rent",
+          "Wallet loads",
+          "Education fees",
+          "EMI",
+          "Insurance",
+          "Utilities"
+        ],
+        "monthlyCaps": [
+          {
+            "name": "SmartBuy accelerated",
+            "cap": 4000,
+            "spend": "₹30,000–₹60,000 depending on 5X/10X",
+            "notes": "2,000 points/day cap; 4,000 points/month cap"
+          },
+          {
+            "name": "5X brand partners",
+            "cap": 5000,
+            "spend": "₹37,500/month at eligible partners"
+          },
+          {
+            "name": "Groceries",
+            "cap": 2000,
+            "spend": "₹75,000/month"
+          },
+          {
+            "name": "Insurance",
+            "cap": 2000,
+            "spend": "₹75,000/month; excluded from milestones"
+          },
+          {
+            "name": "Overall statement cycle",
+            "cap": 50000,
+            "spend": "₹18.75L pure base retail spend"
+          }
+        ],
+        "pointValues": [
+          {
+            "name": "Cashback / statement credit",
+            "value": 0.2
+          },
+          {
+            "name": "SmartBuy flights/hotels",
+            "value": 0.5
+          },
+          {
+            "name": "Product catalogue",
+            "value": 0.65
+          },
+          {
+            "name": "Transfer partners",
+            "value": 1.4
+          }
+        ]
+      }
+    },
+    {
+      "id": "hsbc",
+      "name": "HSBC Live+",
+      "role": "Secondary",
+      "fee": 1178.82,
+      "annualFee": 999,
+      "gst": 18,
+      "notes": "10% cashback on eligible food delivery, grocery, dining, utilities and apparel. ₹1,200 combined monthly cap; target ₹12,000 eligible spend/month.",
+      "rules": {
+        "monthlyCap": 1200,
+        "rate": 10,
+        "eligible": [
+          "Food delivery",
+          "Groceries",
+          "Dining",
+          "Utilities",
+          "Apparel"
+        ],
+        "excluded": [
+          "Amazon",
+          "Flipkart",
+          "Myntra",
+          "Rent",
+          "Insurance",
+          "Wallet loads",
+          "Credit-card repayments",
+          "Tolls",
+          "Education",
+          "Government",
+          "Wholesale/B2B",
+          "Charity",
+          "International",
+          "Hospitals/healthcare",
+          "Local public transport",
+          "Fuel"
+        ]
+      }
+    },
+    {
+      "id": "sbi",
+      "name": "SBI Cashback",
+      "role": "Secondary",
+      "fee": 1178.82,
+      "annualFee": 999,
+      "gst": 18,
+      "notes": "5% eligible online, capped ₹2,000/statement cycle at ₹40,000 spend; 1% eligible offline, capped ₹2,000 at ₹2,00,000 spend. Combined cap ₹4,000/cycle.",
+      "rules": {
+        "onlineRate": 5,
+        "onlineCap": 2000,
+        "onlineSpendCap": 40000,
+        "offlineRate": 1,
+        "offlineCap": 2000,
+        "offlineSpendCap": 200000,
+        "excluded": [
+          "Government & taxes",
+          "Utilities",
+          "Insurance",
+          "Rent",
+          "Wallet loads",
+          "Education",
+          "Fuel",
+          "Tolls/FASTag",
+          "Direct IRCTC/railways",
+          "Jewellery",
+          "EMI/Flexipay",
+          "Cash withdrawals",
+          "Digital gaming/software"
+        ]
+      }
+    },
+    {
+      "id": "kotak",
+      "name": "Kotak 811 Super",
+      "role": "Secondary",
+      "fee": 499,
+      "annualFee": 499,
+      "gst": 0,
+      "notes": "Requires a single ₹10,000 deposit each month. 5% reward on online and offline spend, ₹100 per-transaction cap, ₹500 monthly cap; ₹2,000 per transaction reaches ₹100 cap and ₹10,000 monthly spend reaches cap.",
+      "rules": {
+        "rate": 5,
+        "perTxnCap": 100,
+        "monthlyCap": 500,
+        "monthlySpendTarget": 10000,
+        "condition": "Single deposit of ₹10,000/month"
+      }
+    }
+  ],
+  "transactions": [],
+  "cardData": {
+    "regalia": {
+      "annual": 0,
+      "quarterly": {}
+    },
+    "hsbc": {
+      "monthly": {}
+    },
+    "sbi": {
+      "cycle": {}
+    },
+    "kotak": {
+      "monthly": {}
+    }
+  },
+  "notes": "Transactions added in ChatGPT should be appended here; PWA polls this public JSON for updates. Rewards are estimates from user-provided terms."
+}

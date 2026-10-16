@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-16T15:37:02.745Z",
+  "updatedAt": "2026-10-16T15:44:44.986Z",
   "cards": [
     {
       "id": "regalia",
@@ -10,7 +10,7 @@
       "limit": null,
       "annualFee": 2500,
       "gst": 18,
-      "notes": "Milestones: ₹4L fee waiver; ₹5L ₹5,000 SmartBuy flight voucher; ₹7.5L additional ₹5,000 SmartBuy flight voucher. Target ₹1.5L each quarter for ₹1,500 retail voucher. Lounge: ₹60,000 spend in current calendar quarter.",
+      "notes": "Base earn: 5 Reward Points (RP) per ₹200 (~2.5% points-back by point count; rupee value depends on redemption). 5X partner brands earn 25 RP/₹200 at eligible partners including Myntra, Nykaa, Marks & Spencer and Reliance Digital, capped at 5,000 RP/month. SmartBuy: 5X on flights and gift vouchers; 10X on hotels; combined accelerated SmartBuy cap 4,000 RP/month and 2,000 RP/day. Milestones: ₹4L fee waiver; ₹5L ₹5,000 SmartBuy flight voucher; ₹7.5L additional ₹5,000 SmartBuy flight voucher. Target ₹1.5L each quarter for ₹1,500 retail voucher. Lounge: ₹60,000 spend in current calendar quarter.",
       "rules": {
         "milestoneExcluded": [
           "Government & taxes",
@@ -67,7 +67,35 @@
             "name": "Transfer partners",
             "value": 1.4
           }
-        ]
+        ],
+        "baseRate": {
+          "points": 5,
+          "perSpend": 200,
+          "label": "5 RP per ₹200"
+        },
+        "brandPartnerRate": {
+          "multiplier": 5,
+          "pointsPer200": 25,
+          "monthlyCap": 5000,
+          "brands": [
+            "Myntra",
+            "Nykaa",
+            "Marks & Spencer",
+            "Reliance Digital"
+          ]
+        },
+        "smartBuy": {
+          "flightsAndGiftVouchers": {
+            "multiplier": 5,
+            "pointsPer200": 25
+          },
+          "hotels": {
+            "multiplier": 10,
+            "pointsPer200": 50
+          },
+          "monthlyCap": 4000,
+          "dailyCap": 2000
+        }
       }
     },
     {
